@@ -1,15 +1,15 @@
-function my_f(str, arr) {
+function findAnagrams(str, arr) {
   let splited = str.split("").sort().join();
-  let anagram = [];
+  let anagrams = [];
 
   for (let i = 0; i < arr.length; i++) {
     if (splited === arr[i].split("").sort().join()) {
-      anagram.push(arr[i]);
+      anagrams.push(arr[i]);
     }
   }
-  return anagram;
+  return anagrams;
 }
 
 console.log(
-  my_f("pencil", ["licnep", "circular", "pupil", "nilcpe", "leppnec"])
+  findAnagrams("pencil", ["licnep", "circular", "pupil", "nilcpe", "leppnec"])
 );

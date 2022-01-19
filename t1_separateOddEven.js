@@ -1,9 +1,9 @@
-function my_f(arr) {
-  let even = [];
-  let odd = [];
+function separateNumbers(arr) {
+  let evens = [];
+  let odds = [];
   for (let i = 0; i < arr.length; i++) {
-    arr[i] % 2 === 0 ? even.push(arr[i]) : odd.push(arr[i]);
+    arr[i] % 2 === 0 ? evens.push(arr[i]) : odds.push(arr[i]);
   }
-  return odd.concat(even);
+  return odds.concat(evens);
 }
-console.log(my_f([1, 3, 4, 5, 9]));
+console.log(separateNumbers([1, 3, 4, 5, 9]));

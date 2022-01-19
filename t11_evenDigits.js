@@ -1,4 +1,4 @@
-function my_f(num1, num2) {
+function onlyEvenDigits(num1, num2) {
   let arr = [];
   for (let i = num1; i < num2; i++) {
     if (
@@ -15,4 +15,4 @@ function my_f(num1, num2) {
   }
   return arr.length !== 0 ? arr : "Such numbers does not exist.";
 }
-console.log(my_f(19, 42));
+console.log(onlyEvenDigits(19, 42));

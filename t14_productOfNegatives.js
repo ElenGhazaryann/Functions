@@ -1,4 +1,4 @@
-function my_f(arr) {
+function findNegativesProduct(arr) {
   let filtered = [];
   let mult = 1;
 
@@ -21,4 +21,4 @@ function my_f(arr) {
 
   return mult !== 1 ? mult : "No negatives";
 }
-console.log(my_f([1, 2]));
+console.log(findNegativesProduct([1, 2]));
